@@ -1,0 +1,23 @@
+{# templates/pages/sales.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+
+    
+        {% if success is defined and success == true %}
+            <div class="success-msg">
+                <i class="fa fa-check"></i>
+                New sales record added successfully
+            </div>
+            <a href="/sales/new">Add another sale</a> | <a href="/sales/history">View Sales History</a>
+        {% else %}
+            <div id="sales-form"> 
+                {{ form_start(form) }}
+                {{ form_widget(form) }} 
+                {{ form_end(form) }} 
+           </div>
+        {% endif %}
+
+    </div>
+{% endblock %}

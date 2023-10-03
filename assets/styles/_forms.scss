@@ -1,0 +1,92 @@
+
+#sales-form {
+
+    width: 100%;
+    font-family: verdana; 
+    font-size: 16px;
+    border: 1px solid $lightgrey; 
+    padding: 40px; 
+
+    label { 
+	    float:left; 
+	    width:30%; 
+	    text-align:right; 
+	    display:block;
+	    padding: 15px; 
+   	}  
+   span { 
+      font-size:11px; 
+      color: $grey; 
+      width: 100px; 
+      text-align: right; 
+      display: block; 
+   }  
+   input { 
+      	padding: 15px;
+	    border: 1px solid #ccc;
+	    border-radius: 0px;
+	    margin-bottom: 10px;
+	    width: 40%;
+	    box-sizing: border-box;
+	    color: #2C3E50;
+	    font-size:16px;
+   }  
+   textarea { 
+      border:1px solid $grey; 
+      font-size: 14px; 
+      color:light blue; 
+      height:120px; 
+      width:250px; 
+      margin: 0 0 20px 10px; 
+   }  
+   select { 
+      margin: 0 0 20px 10px; 
+   }  
+   .button {
+	  display: block;
+	  padding: .75rem 1.25rem;
+	  margin: 20px auto;
+	  border-radius: 10rem;
+	  color: #fff;
+	  text-transform: uppercase;
+	  font-size: 1rem;
+	  letter-spacing: .15rem;
+	  transition: all .3s;
+	  position: relative;
+	  overflow: hidden;
+	  z-index: 1;
+	  border: 0;
+	  cursor: pointer;
+	  &:after {
+	    content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: $buttoncolor;
+	    border-radius: 10rem;
+	    z-index: -2;
+	  }
+	  &:before {
+	    content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 0%;
+	    height: 100%;
+	    background-color: darken($buttoncolor, 15%);
+	    transition: all .3s;
+	    border-radius: 10rem;
+	    z-index: -1;
+	  }
+	  &:hover {
+	    color: #fff;
+	    &:before {
+	      width: 100%;
+	    }
+	  }
+	}
+
+}  
+   

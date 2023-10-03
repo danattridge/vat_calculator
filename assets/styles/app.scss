@@ -1,0 +1,79 @@
+@import 'colors.scss';
+@import 'tables.scss';
+@import 'forms.scss';
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+body {
+
+    margin: 0;
+    font: 16px "Arial", helvetica, sans-serif;
+
+    #app {
+
+        .block-element {
+            width: 100%;
+            display: block;
+            float: left;
+            margin-bottom: 30px;
+            clear: both;
+        }
+
+        .container {
+            display: block;
+            margin: 0 auto;
+            width: 1160px;
+            padding: 0 20px;
+            clear: both;
+        }
+
+        header, footer {
+            background-color: $darkgrey;
+            color: #ffffff;
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+        nav {
+            ul.list {
+                list-style: none;
+                li.list-item {
+                    float: left;
+                    a {
+                        display: block;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .info-msg,
+    .success-msg,
+    .warning-msg,
+    .error-msg {
+      margin: 20px 0;
+      padding: 10px;
+      border-radius: 3px 3px 3px 3px;
+    }
+    .info-msg {
+      color: #059;
+      background-color: #BEF;
+    }
+    .success-msg {
+      color: #270;
+      background-color: #DFF2BF;
+    }
+    .warning-msg {
+      color: #9F6000;
+      background-color: #FEEFB3;
+    }
+    .error-msg {
+      color: #D8000C;
+      background-color: #FFBABA;
+    }
+
+}

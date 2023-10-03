@@ -1,0 +1,12 @@
+{# templates/inc/header.html.twig #}
+
+{% block header %}
+    <header class="block-element">
+        <div class="container"> 
+            <a href="/"><h1>VAT Calculator</h1></a>
+            {% block nav %}
+                {% include 'inc/nav.html.twig' %}
+            {% endblock %}
+        </div>
+    </header>
+{% endblock %}
